@@ -12,13 +12,18 @@ import { storeInDb, getFromDb, deleteFromDb} from './server';
         life: "She was sooo niece!....etc."
         })
     
-    var myCursor = await getFromDb('funeralArrangements',
+
+
+    /*var myCursor = await getFromDb('funeralArrangements',
         {'funeralHome':'Lauqua'});
     
     while (await myCursor.hasNext()){
         const doc=await myCursor.next();
         console.info("Found in collection ", 'funeralArrangements', " item ", doc);
-    }
+    }*/
+
+    console.info("Found in collection ", 'funeralArrangements', " item ", getFromDb('funeralArrangements',
+    {'funeralHome':'Lauqua'}));
     
     await deleteFromDb ("userInfo", {'id':'U2'});
    

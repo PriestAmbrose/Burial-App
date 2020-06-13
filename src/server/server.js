@@ -56,7 +56,9 @@ export const getFromDb = async (col,queryFilter) => {
     let db = await connectDB();
     let collection = db.collection(col);
     console.info("Query from collection ", col, " items ", queryFilter);
-    return await collection.find(queryFilter);
+    var myCursor = await collection.find(queryFilter); // a simplified version of getFromDb
+    //it gets only the first found entry
+    return myCursor.next()
 }
 
 /* The call of "deleteFromDb" deletes from collection "col" all items wich are found 

@@ -58,6 +58,14 @@ function Plan(){
 <Form.File id="File2"  />
     </Form.Group>
 </div>
+
+<div class="form-group10">
+    <Form.Group as={Col} controlId="formGridPicture">
+      <Form.Label>Upload Picture for death announcement (optional)</Form.Label>
+<Form.File id="File3"  />
+    </Form.Group>
+</div>
+
 </Form.Row>
 
 <div class="row4">

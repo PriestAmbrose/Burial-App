@@ -1,6 +1,5 @@
 ## React + Redux + Webpack + Babel + Express 
 
-[Pluralsight Course](https://app.pluralsight.com/library/courses/react-express-full-stack-app-building/table-of-contents)
 
 ### Starting application with webpack
 
